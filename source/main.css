@@ -1,0 +1,82 @@
+/* Fonts do GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Staatliches&display=swap');
+
+/* Variables css*/
+:root{
+    /* Colors */
+    /* Color mode HSL(hue, saturation, lightness)*/
+    /*
+        blue    :   hsl(224, 69%, 14%)
+        red     :   hsl(0, 100%, 43%)
+        gray    :   hsl(0, 0%, 98%)
+        green   :   hsl(100, 83%, 41%)
+        yellow  :   HSL(52, 100%, 50%)
+    */
+
+    --hue: 0;
+    --sat: 0%;
+    --lig: 9%;
+
+    --principal-color: hsl(var(--hue), var(--sat), var(--lig)) ;
+    --second-color: hsl(43, 74%, 49%);
+    --second-color-alt: hsl(0, 0%, 98%);
+    --tird-color: hsl(var(--hue), var(--sat), var(--lig));
+    --dark-color: hsl(var(--hue), 15%, 45%);
+    --dark-second-color: hsl(var(--hue), 8%, 75%);
+    --gray-color: hsl(var(--hue), 8%, 92%);
+    --gray-second-color: hsl(var(--hue), 100%, 99%);
+    --light-color: #fff;
+    --attention-color-red: hsl(0, 100%, 43%);
+    --attention-color-green: hsl(128, 52%, 47%);
+    --attention-color-yellow: hsl(52, 100%, 50%);
+    --attention-color-orange: hsl(52, 100%, 50%);
+
+    /* Font and typography */
+    /* .5rem = 8px / 1rem = 16px */
+    --body-font: 'Poppins', sans-serif;
+    --header: 4.6rem;
+    --title: 3.4rem;
+    --subtile: 2.4rem;
+    --text-body: 2.1rem;
+    --small: 1.4rem;
+    --smaller: 1.2rem;
+
+    /* Title center*/
+
+}
+
+/* Responsive typography */
+@media only screen and (orientation: portrait)  {
+    :root {
+        --header: 3.8rem;
+        --title: 2.6rem;
+        --sub-title: 2rem;
+        --text-body: 1.6rem;
+        --small: 1.4rem;
+        --smaller: 1rem;
+    
+    }
+}
+*,
+*::after,
+*::before{
+    list-style:none;
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    text-align:left;
+    border:0;
+    outline-color:#ccc;
+    color: var(--first-color);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    font-size:62.5%;
+    font-family:'Poppins', sans-serif;
+    font-display: fallback;
+}
+html{
+    scroll-behavior: smooth;
+    direction: ltr;
+}
